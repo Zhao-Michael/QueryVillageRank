@@ -23,13 +23,10 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-
-
         if (sp.contains("id")) {
             edittext_id.setText(sp.getString("id", ""))
         } else {
             sp.edit().putString("id", "").apply()
-
         }
 
         buttonQuery.onClick {
